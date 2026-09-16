@@ -139,5 +139,5 @@
 
 <hr>
 <p align="center">
-  <sub>Dibuat dengan ❤️ oleh Tim Organisasi Kuliah Semester 1</sub>
+  <sub>Dibuat dengan otak oleh Tim ABGEses</sub>
 </p>
