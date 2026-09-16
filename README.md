@@ -106,15 +106,19 @@
 <table align="center">
   <tr>
     <td align="center" width="150">
-      <b>Erzha N. Ardheva</b><br>
-      <sub>Lead Developer</sub>
+      <b>Atina</b><br>
+      <sub>Database</sub>
     </td>
     <td align="center" width="150">
-      <b>[Nama Teman 1]</b><br>
+      <b>BIMMA</b><br>
+      <sub>Ui/UX Desain</sub>
+    </td>
+    <td align="center" width="150">
+      <b>Gadis</b><br>
       <sub>Developer</sub>
     </td>
-    <td align="center" width="150">
-      <b>[Nama Teman 2]</b><br>
+        <td align="center" width="150">
+      <b>Erzha</b><br>
       <sub>Developer</sub>
     </td>
   </tr>
