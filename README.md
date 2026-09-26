@@ -107,7 +107,7 @@
   <tr>
     <td align="center" width="150">
       <b>Atina</b><br>
-      <sub>Database</sub>
+      <sub>Developer</sub>
     </td>
     <td align="center" width="150">
       <b>BIMMA</b><br>
@@ -119,6 +119,11 @@
     </td>
         <td align="center" width="150">
       <b>Erzha</b><br>
+      <sub>Developer</sub>
+    </td>
+    </td>
+        <td align="center" width="150">
+      <b>Galang</b><br>
       <sub>Developer</sub>
     </td>
   </tr>
