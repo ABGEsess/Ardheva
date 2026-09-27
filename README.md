@@ -107,24 +107,24 @@
   <tr>
     <td align="center" width="150">
       <b>Atina</b><br>
-      <sub>Developer</sub>
+      <sub>Backend Developer & Database Assistant</sub>
     </td>
     <td align="center" width="150">
       <b>BIMMA</b><br>
-      <sub>Ui/UX Desain</sub>
+      <sub>Ui/UX Designer & Frontend Stylist</sub>
     </td>
     <td align="center" width="150">
       <b>Gadis</b><br>
-      <sub>Developer</sub>
+      <sub>Frontend Developer</sub>
     </td>
         <td align="center" width="150">
       <b>Erzha</b><br>
-      <sub>Developer</sub>
+      <sub>Project Leader & System Architec</sub>
     </td>
     </td>
         <td align="center" width="150">
       <b>Galang</b><br>
-      <sub>Developer</sub>
+      <sub>Frontend Helper & Data Specialist</sub>
     </td>
   </tr>
 </table>
