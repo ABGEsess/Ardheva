@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ardheva</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello Wordl!</h1>
+    <header class="navbar">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="contact">Contact</a>
+            <a href="#" class="btn btn-dark">Sign in</a>
+            <a href="#" class="btn btn-dark">Sign up</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="logo-box">GAMBAR LOGO</div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+             Lorem Ipsum has been the industry's standard dummy text ever since 1966,
+             when designers at Letraset and James Mosley, the librarian at St Bride Printing
+             Library in London, took a 1914 Cicero translation and scrambled it to make dummy
+             text for Letraset's Body Type sheets.
+            </p>
+        </div>
+
+        <div class="slider">
+            <button class="arrow" onclick="ganti(-1)" aria-label="Sebelumnya">&larr;</button>
+             <div class="slide" id="slide">Gambar 1</div>
+            <button class="arrow" onclick="ganti(-1)" aria-label="Berikutnya">&rarr;</button>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About</h2>
+        <div class="about-content">
+            <div class="about-images">
+                <div class="img img-1">Gambar 1</div>
+                <div class="img img-2">Gambar 2</div>
+                <div class="img img-3">Gambar 3</div>
+            </div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since 1966, 
+            when designers at Letraset and James Mosley, the librarian at St Bride Printing
+            Library in London, took a 1914 Cicero translation and scrambled it to make dummy 
+            text for Letraset's Body Type sheets.
+            </p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
