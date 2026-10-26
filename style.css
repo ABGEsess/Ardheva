@@ -1,0 +1,383 @@
+/* Palet Warna Dari Logo AFS */
+:root {
+    --color-navy: #203B5E;       
+    --color-sky-blue: #BDDFF2;   
+    --color-lime: #00E600;       
+    --color-olive: #8AA84A;      
+    --color-gold: #F5C673;       
+    --color-skin: #F2DED1;       
+    
+    --bg-primary: #F2DED1;       
+    --text-primary: #203B5E;     
+    --text-muted: #556B82;       
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--text-primary);
+    line-height: 1.6;
+    background: linear-gradient(135deg, var(--color-skin), var(--bg-primary), var(--color-gold));
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--color-sky-blue) !important;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    min-height: 50px;
+}
+
+.navbar-brand {
+    font-size: 16px !important;
+    line-height: 1.1;
+}
+
+.nav-link {
+    font-size: 13px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 520px;
+    background-image: url('https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=1200&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-text {
+    font-size: 13px;
+    color: #333333;
+    line-height: 1.5;
+}
+
+/* Buttons */
+.btn-lime {
+    background-color: var(--color-olive);
+    color: #1a2b4c;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-lime:hover {
+    background-color: #8ce620;
+    color: #1a2b4c;
+    transform: translateY(-2px);
+}
+
+.btn-pesan-sekarang {
+    background-color: var(--color-olive); /* Warna hijau cerah sesuai tema */
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    border: none;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-pesan-sekarang:hover {
+    background-color: #00cc00; /* Warna hijau sedikit lebih gelap saat di-hover */
+    color: #ffffff !important;
+    transform: translateY(-2px); /* Efek tombol sedikit naik ke atas */
+}
+
+/* Titles */
+.section-title {
+    color: var(--color-navy);
+    letter-spacing: 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.about-description {
+    max-width: 750px;
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+/* About Cards */
+.about-cards-container {
+    background-image: url('https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=1200&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    min-height: 380px;
+}
+
+.about-cards-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 0;
+}
+
+.about-card {
+    background-color: #d8d8d8;
+    aspect-ratio: 3 / 4;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Menu Section */
+.menu-page-group {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.menu-card {
+    background-color: #d3d3d3;
+    padding: 12px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-photo {
+    background-color: #ffffff;
+    height: 180px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #333;
+    font-size: 24px;
+}
+
+.menu-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu-info .price {
+    font-size: 13px;
+    color: #333;
+}
+
+/* Container Menu Slider */
+.menu-slider-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.menu-slider-container::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-page-group {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+}
+
+/* Slider Arrows */
+.slider-arrow {
+    width: 36px;
+    height: 36px;
+    border-radius: 50% !important;
+    border: none;
+    background-color: #d3d3d3 !important;
+    color: #333 !important;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+    flex-shrink: 0;
+}
+
+.slider-arrow:hover {
+    background-color: #b8b8b8 !important;
+}
+
+/* =================================================== */
+/* Testimoni Carousel Fokus Tengah (3 Kartu di Desktop) */
+/* =================================================== */
+
+.testimoni-viewport {
+    width: 100%;
+    max-width: 960px; /* Membatasi lebar agar pas menampilkan 3 kartu */
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: grab;
+}
+
+.testimoni-viewport:active {
+    cursor: grabbing;
+}
+
+.testimoni-track {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    padding: 30px 0;
+}
+
+.testimoni-track::-webkit-scrollbar {
+    display: none;
+}
+
+/* Ukuran Kartu Kanan & Kiri (Redup & Lebih Kecil) */
+.testimoni-card {
+    min-width: 260px;
+    width: 260px;
+    height: 340px;
+    background-color: #d3d3d3;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    transition: transform 0.4s ease, opacity 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
+    transform: scale(0.82);
+    opacity: 0.55;
+    filter: brightness(0.85);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+}
+
+/* Kartu di Tengah (Fokus Utama & Lebih Besar) */
+.testimoni-card.is-center {
+    transform: scale(1.1);
+    opacity: 1;
+    filter: brightness(1);
+    z-index: 3;
+    box-shadow: 0 12px 30px rgba(32, 59, 94, 0.3) !important;
+}
+
+/* Contact Section Buttons */
+.btn-contact-wa {
+    background-color: #00D632;
+}
+
+.btn-contact-ig {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.btn-contact-fb {
+    background-color: #007AFF;
+}
+/* Efek Hover untuk Tombol Kontak (WhatsApp) */
+.btn-contact-wa:hover {
+    background-color: #00b52a !important; /* Hijau lebih gelap saat di-hover */
+    color: #ffffff !important;
+}
+/* Efek Hover untuk Tombol Kontak (Instagram) */
+.btn-contact-ig:hover {
+    filter: brightness(0.9); /* Sedikit meredupkan gradasi agar ada efek interaktif */
+    color: #ffffff !important;
+}
+/* Efek Hover untuk Tombol Kontak (Facebook) */
+.btn-contact-fb:hover {
+    background-color: #0056b3 !important; /* Biru lebih gelap saat di-hover */
+    color: #ffffff !important;
+}
+
+
+
+
+
+/* Dots Indicator */
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #555555;
+}
+
+/* Footer Customization */
+.footer-section {
+    background-color: var(--color-sky-blue);
+    color: var(--text-primary);
+    border-top: 1px solid rgba(32, 59, 94, 0.1);
+}
+
+.footer-title {
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: var(--text-primary);
+}
+
+.footer-text {
+    font-size: 13px;
+    color: var(--text-primary);
+}
+
+.footer-link {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--color-olive);
+}
+
+.footer-copy {
+    font-size: 11px;
+    color: var(--text-primary);
+}
+
+/* Responsif untuk Tampilan Mobile / HP */
+@media (max-width: 768px) {
+    .testimoni-viewport {
+        max-width: 100%;
+    }
+
+    .testimoni-card {
+        min-width: 210px;
+        width: 210px;
+        height: 300px;
+        transform: scale(0.9);
+    }
+
+    .testimoni-card.is-center {
+        transform: scale(1.03);
+    }
+}
