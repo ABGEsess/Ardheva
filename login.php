@@ -18,14 +18,22 @@ if (isset($_POST['login'])) {
         if (password_verify($password, $user['password'])) {
             // Simpan data user ke dalam session
             $_SESSION['login']     = true;
+            $_SESSION['status']    = "login"; // Untuk validasi di dashboard_admin.php
             $_SESSION['id_user']   = $user['id_user'];
             $_SESSION['nama_user'] = $user['nama_user'];
+            $_SESSION['username']  = $user['nama_user'];
             $_SESSION['role']      = $user['role'];
 
-            // Redirect ke halaman utama / dashboard
+            // Redirect berdasarkan role user
+            if ($user['role'] === 'admin') {
+                $redirect_page = 'dashboard_admin.php';
+            } else {
+                $redirect_page = 'dashboardClient.php';
+            }
+
             echo "<script>
-                    alert('Login berhasil! Selamat datang, " . $user['nama_user'] . "');
-                    window.location = 'index.php'; // Ubah sesuai halaman utama Anda
+                    alert('Login berhasil! Selamat datang, " . addslashes($user['nama_user']) . "');
+                    window.location = '$redirect_page';
                   </script>";
             exit;
         } else {
@@ -37,8 +45,9 @@ if (isset($_POST['login'])) {
 }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+    <meta charset="UTF-8">
     <title>Login - UMKM Catering</title>
 </head>
 <body>
