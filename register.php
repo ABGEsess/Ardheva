@@ -32,7 +32,7 @@ if (isset($_POST['register'])) {
     <form action="" method="POST">
         <table>
             <tr>
-                <td>Nama Lengkap</td>
+                 <td>Nama Lengkap</td>
                 <td><input type="text" name="nama_user" required></td>
             </tr>
             <tr>
