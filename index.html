@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ardheva Food & Snack</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top px-3 py-1">
+        <div class="container">
+            <a class="navbar-brand logo fw-bold text-uppercase fs-6" href="#">
+                ARDHEVA<br><small class="fs-6 fw-normal">FOOD & SNACK</small>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center gap-3">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <!-- Tombol Sign Up & Sign In di dalam Navbar -->
+                    <li class="nav-item ms-lg-2">
+                        <div class="hero-buttons d-flex justify-content-center gap-2">
+                            <a href="#signup" class="btn btn-lime rounded-pill px-3 py-1 shadow-sm fs-6">sign up</a>
+                            <a href="#signin" class="btn btn-lime rounded-pill px-3 py-1 shadow-sm fs-6">sign in</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero text-center position-relative d-flex justify-content-center align-items-center" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container position-relative z-1 py-5">
+            <!-- Logo Maskot AFS di Tengah Hero -->
+            <div class="hero-mascot mb-3">
+                <img src="logo-afs.png" alt="logo" width="245px">
+            </div>
+            
+            <div class="hero-text-card mx-auto p-4 rounded-4 shadow-sm mb-4" style="max-width: 650px; background-color: rgba(224, 224, 224, 0.85);">
+                <p class="hero-text mb-0">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
+                    Ipsum has been the industry's standard dummy text ever since 1966, when designers 
+                    at Letraset and James Mosley, the librarian at St Bride Printing Library in London, 
+                    took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.
+                </p>
+            </div>
+            <div class="hero-buttons d-flex justify-content-center gap-3">
+                <a href="#pesan" class="btn rounded-pill px-4 py-2 fw-bold text-white shadow-sm btn-pesan-sekarang">PESAN SEKARANG</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about container py-5" id="about">
+        <h2 class="text-center fw-bold mb-3 section-title">ABOUT</h2>
+        <p class="about-description text-center mx-auto mb-5">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since 1966, 
+            when designers at Letraset and James Mosley, the librarian at St Bride Printing
+            Library in London, took a 1914 Cicero translation and scrambled it to make dummy 
+            text for Letraset's Body Type sheets.
+        </p>
+        
+        <div class="about-cards-container rounded-4 position-relative overflow-hidden p-4 p-md-5">
+            <div class="row g-4 position-relative z-1">
+                <div class="col-6 col-md-3">
+                    <div class="about-card rounded-1"><img src="" alt="foto1"></div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="about-card rounded-1"><img src="" alt="foto2"></div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="about-card rounded-1"><img src="" alt="foto3"></div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="about-card rounded-1"><img src="" alt="foto4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Menu Section -->
+<section class="menu-section py-5 container" id="menu">
+    <h2 class="section-title text-center fw-bold mb-4">MENU</h2>
+
+    <div class="slider-wrapper d-flex align-items-center justify-content-center gap-3">
+        <!-- Button Prev -->
+        <button class="slider-arrow prev-btn btn" id="menu-prev" aria-label="Sebelumnya">&larr;</button>
+        
+        <!-- Container Utama Menu Slider (Tambah ID ini) -->
+        <div class="menu-slider-container flex-grow-1" id="menu-slider-container">
+            <!-- Slide 1 -->
+            <div class="menu-page-group">
+                <div class="menu-card">
+                    <div class="menu-photo"><span>Foto</span><img src="" alt="menu1"></div>
+                    <div class="menu-info"><p class="price mb-0">Harga</p></div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-photo"><span>Foto</span><img src="" alt="menu2"></div>
+                    <div class="menu-info"><p class="price mb-0">Harga</p></div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-photo"><span>Foto</span><img src="" alt="menu3"></div>
+                    <div class="menu-info"><p class="price mb-0">Harga</p></div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-photo"><span>Foto</span><img src="" alt="menu4"></div>
+                    <div class="menu-info"><p class="price mb-0">Harga</p></div>
+                </div>
+            </div>
+            
+            <!-- Slide 2 (Seterusnya) -->
+            <div class="menu-page-group">
+                <div class="menu-card">
+                    <div class="menu-photo"><span>Foto</span><img src="" alt="menu5"></div>
+                    <div class="menu-info"><p class="price mb-0">Harga</p></div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-photo"><span>Foto</span><img src="" alt="menu6"></div>
+                    <div class="menu-info"><p class="price mb-0">Harga</p></div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-photo"><span>Foto</span><img src="" alt="menu7"></div>
+                    <div class="menu-info"><p class="price mb-0">Harga</p></div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-photo"><span>Foto</span><img src="" alt="menu8"></div>
+                    <div class="menu-info"><p class="price mb-0">Harga</p></div>
+                </div>
+            </div>
+            <!-- Slide 3 (Seterusnya) -->
+            <div class="menu-page-group">
+                <div class="menu-card">
+                    <div class="menu-photo"><span>Foto</span><img src="" alt="menu9"></div>
+                    <div class="menu-info"><p class="price mb-0">Harga</p></div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-photo"><span>Foto</span><img src="" alt="menu10"></div>
+                    <div class="menu-info"><p class="price mb-0">Harga</p></div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-photo"><span>Foto</span><img src="" alt="menu11"></div>
+                    <div class="menu-info"><p class="price mb-0">Harga</p></div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-photo"><span>Foto</span><img src="" alt="menu12"></div>
+                    <div class="menu-info"><p class="price mb-0">Harga</p></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button Next -->
+        <button class="slider-arrow next-btn btn" id="menu-next" aria-label="Berikutnya">&rarr;</button>
+    </div>
+
+    <!-- Dots Indikator -->
+    <div class="dots-container d-flex justify-content-center gap-2 mt-4" id="menu-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</section>
+
+<!-- Testimoni Section -->
+<section class="testimoni-section py-5 container" id="testimoni">
+    <h2 class="section-title text-center fw-bold mb-3">TESTIMONI</h2>
+
+    <div class="testimoni-header text-center mb-4">
+        <h3 class="fw-bold fs-4">Cerita manis dari pelanggan setia Ardheva Food & Snack</h3>
+    </div>
+
+    <div class="slider-wrapper d-flex align-items-center justify-content-center gap-3 position-relative">
+        <!-- Button Prev -->
+        <button class="slider-arrow prev-btn btn" id="testi-prev" aria-label="Sebelumnya">&larr;</button>
+
+        <!-- Container Testimoni -->
+        <div class="testimoni-viewport flex-grow-1 overflow-hidden py-4">
+            <div class="testimoni-track d-flex align-items-center gap-4" id="testi-track">
+                <!-- Kartu Testimoni 1 -->
+                <div class="testimoni-card position-relative overflow-hidden shadow-sm rounded-3">
+                    <span>SS WA 1</span>
+                    <img src="" alt="SSWA1" class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                </div>
+                <!-- Kartu Testimoni 2 -->
+                <div class="testimoni-card position-relative overflow-hidden shadow-sm rounded-3">
+                    <span>SS WA 2</span>
+                    <img src="" alt="SSWA2" class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                </div>
+                <!-- Kartu Testimoni 3 -->
+                <div class="testimoni-card position-relative overflow-hidden shadow-sm rounded-3">
+                    <span>SS WA 3</span>
+                    <img src="" alt="SSWA3" class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                </div>
+                <!-- Kartu Testimoni 4 -->
+                <div class="testimoni-card position-relative overflow-hidden shadow-sm rounded-3">
+                    <span>SS WA 4</span>
+                    <img src="" alt="SSWA4" class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                </div>
+                <!-- Kartu Testimoni 5 -->
+                <div class="testimoni-card position-relative overflow-hidden shadow-sm rounded-3">
+                    <span>SS WA 5</span>
+                    <img src="" alt="SSWA5" class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                </div>
+            </div>
+        </div>
+
+        <!-- Button Next -->
+        <button class="slider-arrow next-btn btn" id="testi-next" aria-label="Berikutnya">&rarr;</button>
+    </div>
+
+    <!-- Dots Indikator (Otomatis menyesuaikan jumlah kartu via JS) -->
+    <div class="dots-container d-flex justify-content-center gap-2 mt-4" id="testi-dots"></div>
+</section>
+<!-- Contact Section -->
+    <section class="contact-section py-5 container" id="contact">
+        <h2 class="section-title text-center fw-bold mb-5">CONTACT</h2>
+
+        <div class="row g-4 align-items-center">
+            <!-- Peta / Maps -->
+            <div class="col-12 col-md-6">
+                <div class="maps-card rounded-3 overflow-hidden shadow-sm" style="height: 260px;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.8120900870435!2d111.90535697431936!3d-7.595419975057757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e784b00200f7ce7%3A0xaf7f002b3cb27a2e!2sArdheva%20Food%20And%20Snack!5e0!3m2!1sen!2sid!4v1792754411565!5m2!1sen!2sid" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Media Sosial & Pesan -->
+            <div class="col-12 col-md-6 ps-md-5">
+                <div class="d-flex flex-column gap-3 max-w-sm">
+                    <a href="https://wa.me/6285784518241?text=Halo%20Ardheva%20Food%20%26%20Snack,%20saya%20ingin%20bertanya%20mengenai%20produk" target="_blank" class="btn btn-contact-wa d-flex align-items-center justify-content-between px-4 py-2 rounded-pill text-white fw-bold">
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="24" height="24" alt="WA">
+                        </div>
+                        <span>Ingin Bertanya</span>
+                    </a>
+
+                    <!-- Tombol Instagram dengan Link Langsung -->
+                    <a href="https://instagram.com/gadiispp_" target="_blank" class="btn btn-contact-ig d-flex align-items-center justify-content-between px-4 py-2 rounded-pill text-white fw-bold">
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" width="24" height="24" alt="IG">
+                        </div>
+                        <span>Kunjungi</span>
+                    </a>
+
+                    <!-- Tombol Facebook dengan Link Langsung -->
+                    <a href="https://facebook.com/nama_halaman_kamu" target="_blank" class="btn btn-contact-fb d-flex align-items-center justify-content-between px-4 py-2 rounded-pill text-white fw-bold">
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" width="24" height="24" alt="FB">
+                        </div>
+                        <span>Kunjungi</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer Section -->
+<footer class="footer-section text-center py-4 mt-5">
+    <div class="container">
+        <!-- Informasi / Hak Cipta -->
+        <p class="mb-1 fw-bold footer-title">Ardheva Food & Snack</p>
+        <p class="mb-3 footer-text">Kelezatan dalam setiap gigitan.</p>
+        
+        <!-- Social Media / Links Pendukung -->
+        <div class="footer-links d-flex justify-content-center gap-3 mb-3">
+            <a href="#home" class="footer-link">Home</a>
+            <a href="#about" class="footer-link">About</a>
+            <a href="#menu" class="footer-link">Menu</a>
+            <a href="#testimoni" class="footer-link">Testimoni</a>
+            <a href="#contact" class="footer-link">Contact</a>
+        </div>
+        
+        <!-- Copyright -->
+        <hr class="footer-divider mx-auto my-3" style="max-width: 300px; opacity: 0.2;">
+        <small class="footer-copy">&copy; 2026 Ardheva Food & Snack. All Rights Reserved.</small>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
